@@ -1,0 +1,3 @@
+profile,scenario,model,runtime_us,critical_path_us,decoder_us,nominal_patch_qubits,resource_unit,dominant_bottleneck
+superconducting,illustrative fast readout,illustrative_gate_schedule,77.5,67.5,10.0,196,nominal_data_and_syndrome_qubits,specified_serial_gate_and_readout_schedule
+superconducting,illustrative slow readout,illustrative_gate_schedule,127.5,117.5,10.0,196,nominal_data_and_syndrome_qubits,specified_serial_gate_and_readout_schedule

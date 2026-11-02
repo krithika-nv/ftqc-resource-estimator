@@ -1,0 +1,3 @@
+profile,scenario,model,runtime_us,supply_us,critical_path_us,delivery_probability,expected_attempts,state_equivalents_required,sources,resource_unit,dominant_bottleneck
+photonic,illustrative optical delivery - fewer sources,illustrative_resource_delivery,124.49424214130097,124.49424214130097,70.0,0.240975,2489.8848428260194,600,2,heralded_resource_state_equivalent,supply
+photonic,illustrative optical delivery - more sources,illustrative_resource_delivery,70.0,62.247121070650486,70.0,0.240975,2489.8848428260194,600,4,heralded_resource_state_equivalent,measurement_and_feedforward

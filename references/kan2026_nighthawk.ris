@@ -1,0 +1,24 @@
+TY  - ELEC
+AU  - Kan, Shuwen
+AU  - Hoyt, Aaron
+AU  - Garner, Sean
+AU  - Vo, Ethan
+AU  - Harkness, Adrian
+AU  - Rofougaran, Rod
+AU  - Du, Zefan
+AU  - Liu, Chenxu
+AU  - Tubman, Norm
+AU  - Mao, Ying
+AU  - Stein, Samuel
+PY  - 2026
+DA  - 2026/10/16
+TI  - Demonstration of Logical Error Suppression in a Surface Code Memory on a Cloud-Accessible IBM Superconducting Processor
+DO  - 10.48550/arXiv.2610.23840
+UR  - https://arxiv.org/abs/2610.23840
+N1  - arXiv:2610.23840v1; preprint, not verified as peer-reviewed; IBM Nighthawk r2 rotated surface-code memory experiment.
+KW  - FTQC architecture
+KW  - experimental surface code
+KW  - readout timing
+KW  - idle errors
+KW  - quantum error correction
+ER  -

@@ -1,0 +1,46 @@
+{
+  "caveat": "Calibration timestamps must not be used as job execution timestamps without source audit. A matched pair with excluded shots does not establish an independent predictive holdout; distinct processors cannot be treated as one hardware calibration.",
+  "decoded_job_count": 40,
+  "epochs": [
+    {
+      "backend": "ibm_fez",
+      "calibration_utc": "2025-08-26T00:03:11+00:00",
+      "jobs": 1
+    },
+    {
+      "backend": "ibm_fez",
+      "calibration_utc": "2025-10-03T15:00:39+00:00",
+      "jobs": 40
+    }
+  ],
+  "excluded_job_count": 1,
+  "job_count": 41,
+  "matched_protocol_candidate_pairs": [
+    {
+      "all_epochs_decoded": false,
+      "backend": "ibm_fez",
+      "basis": "Z",
+      "calibration_times": [
+        "2025-08-26T00:03:11+00:00",
+        "2025-10-03T15:00:39+00:00"
+      ],
+      "distance": 3,
+      "jobs": [
+        {
+          "calibration_utc": "2025-08-26T00:03:11+00:00",
+          "decoding_status": "excluded",
+          "snapshot_id": "ibm_fez/d3_r3/job_2"
+        },
+        {
+          "calibration_utc": "2025-10-03T15:00:39+00:00",
+          "decoding_status": "decoded",
+          "snapshot_id": "ibm_fez/d3_r3/job_3"
+        }
+      ],
+      "rounds": 3
+    }
+  ],
+  "schema": "ftqc.ibm.calibration-coverage.v1",
+  "source_archive": "ibm_fez.tar.gz",
+  "source_sha256": "61ce8e64d45efb1bb4fd8bd883a6bd9232fb0f3d577a3be6bb945e6fb422dfbe"
+}

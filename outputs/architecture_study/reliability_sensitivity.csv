@@ -1,0 +1,6 @@
+physical_error_assumption,chosen_distance,total_site_equivalents,latency_us,modeled_failure,note
+0.0005,9,4158,53571.42857142857,0.0029955045433616117,unfitted reliability ansatz; no real threshold inference
+0.001,11,6174,53571.42857142857,0.009554067578198076,unfitted reliability ansatz; no real threshold inference
+0.0015,15,11415,53571.42857142857,0.0024573507896453284,unfitted reliability ansatz; no real threshold inference
+0.002,none,,,,unfitted reliability ansatz; no real threshold inference
+0.003,none,,,,unfitted reliability ansatz; no real threshold inference

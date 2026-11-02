@@ -1,0 +1,7 @@
+{
+  "study_scope": "ILLUSTRATIVE_EXCLUSION_GEOMETRY_NOT_QUERA_CALIBRATION",
+  "atoms_um": {"a":[0,0], "b":[4,0], "c":[0,16], "d":[4,16], "e":[25,0], "f":[29,0]},
+  "two_atom_operations": [["a","b"],["c","d"],["e","f"],["a","c"],["b","d"]],
+  "exclusion_radius_um": 8,
+  "two_atom_gate_duration_us": 1.0
+}

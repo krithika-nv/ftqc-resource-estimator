@@ -1,0 +1,13 @@
+distance,rounds,controller,patches,readout_checks_per_round_all_patches,readout_channels,batches_per_round,hypothetical_readout_slot_us,hypothetical_round_duration_us,extra_data_idle_per_round_us,idle_pauli_x,idle_pauli_y,idle_pauli_z,idle_total_pauli_probability_per_data_per_round,hypothetical_controller_power_w,patch_physical_qubits
+3,3,wide_parallel_readout,4,32,256,1,0.45,1.1,0.0,0.0,0.0,0.0,0.0,89.6,68
+3,3,medium_parallel_readout,4,32,128,1,0.45,1.1,0.0,0.0,0.0,0.0,0.0,44.8,68
+3,3,constrained_parallel_readout,4,32,32,1,0.45,1.1,0.0,0.0,0.0,0.0,0.0,11.2,68
+5,5,wide_parallel_readout,4,96,256,1,0.45,1.1,0.0,0.0,0.0,0.0,0.0,89.6,196
+5,5,medium_parallel_readout,4,96,128,1,0.45,1.1,0.0,0.0,0.0,0.0,0.0,44.8,196
+5,5,constrained_parallel_readout,4,96,32,3,0.45,1.35,0.25,0.0009174301611913627,0.0009174301611913627,0.0004850934620735381,0.0023199537844562634,11.2,196
+7,7,wide_parallel_readout,4,192,256,1,0.45,1.1,0.0,0.0,0.0,0.0,0.0,89.6,388
+7,7,medium_parallel_readout,4,192,128,2,0.45,1.1,0.0,0.0,0.0,0.0,0.0,44.8,388
+7,7,constrained_parallel_readout,4,192,32,6,0.45,2.7,1.6,0.005813688388748517,0.005813688388748517,0.0030947597908881352,0.014722136568385169,11.2,388
+9,9,wide_parallel_readout,4,320,256,2,0.45,1.1,0.0,0.0,0.0,0.0,0.0,89.6,644
+9,9,medium_parallel_readout,4,320,128,3,0.45,1.35,0.25,0.0009174301611913627,0.0009174301611913627,0.0004850934620735381,0.0023199537844562634,44.8,644
+9,9,constrained_parallel_readout,4,320,32,10,0.45,4.5,3.4,0.012192643874821496,0.012192643874821496,0.006548228829580283,0.030933516579223275,11.2,644

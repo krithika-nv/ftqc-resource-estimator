@@ -1,0 +1,85 @@
+name: External analysis sources - revision-check PR
+on:
+  schedule:
+    - cron: '17 8 * * 2'
+  workflow_dispatch:
+    inputs:
+      download_large_neutral:
+        description: 'Opt in to the ~1 GB authenticated Zenodo neutral-atom archive on the hosted runner (raw data not committed)'
+        required: false
+        type: boolean
+        default: false
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: source-review-pr
+  cancel-in-progress: false
+jobs:
+  revisions:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Query allowlisted source Git HEAD revisions
+        run: python scripts/automation/source_updates.py --refresh
+      - name: Query neutral-atom Zenodo record and file checksums
+        run: python scripts/automation/zenodo_neutral_atom.py
+      - name: Create review PR for changed sources (never auto-merge)
+        uses: peter-evans/create-pull-request@v8
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: automation/external-source-revisions
+          delete-branch: true
+          add-paths: |
+            evidence/upstream_revisions.json
+            evidence/neutral_atom_zenodo_metadata.json
+          title: 'analysis: review upstream experimental source revisions'
+          commit-message: 'analysis: record latest external source revisions for review'
+          body: |
+            This PR records newly observed, allowlisted upstream Git revisions.
+            Do not interpret this as validation of the devices or results.
+            Review the source diff, authors, license, schema, benchmark protocol,
+            and test outcome before merging. Raw large datasets are NOT committed.
+      - name: Archive revision summary
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-revisions-${{ github.run_id }}
+          path: |
+            evidence/upstream_revisions.json
+            evidence/neutral_atom_zenodo_metadata.json
+          retention-days: 30
+          if-no-files-found: warn
+
+  download-and-inventory:
+    name: Download approved lightweight datasets and inspect files
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install analysis dependencies (without executing vendor code)
+        run: python -m pip install -e '.[analysis]'
+      - name: Fetch and audit all four hardware families using the central pipeline
+        run: python scripts/automation/run_pipeline.py --profile evidence --fetch --review-bundle --run-id external-${{ github.run_id }} ${{ inputs.download_large_neutral && '--download-large-neutral' || '' }}
+      - name: Upload metadata and log evidence, not vendor binary files
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: external-source-audit-${{ github.run_id }}
+          path: |
+            evidence/*.json
+            logs/runs/
+            outputs/external_validation/
+            outputs/FOUR_PLATFORM_REVIEW_BUNDLE.zip
+            outputs/matched_hardware_evidence/ibm_fez/
+          retention-days: 30
+          if-no-files-found: warn

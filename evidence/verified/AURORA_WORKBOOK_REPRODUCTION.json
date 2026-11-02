@@ -1,0 +1,45 @@
+{
+  "claim": "numerical matrix reproduction of published-figure workbook values, not raw optical measurements",
+  "figures": {
+    "Fig 3c": {
+      "entries": 144,
+      "experiment_vs_simulation": {
+        "panel_1_experiment_vs_simulation": {
+          "max_absolute_difference": 0.0212995282345992,
+          "mean_absolute_difference": 0.0029237532266207927,
+          "relative_frobenius": 0.8189258332396814,
+          "rmse": 0.005688410010399236
+        },
+        "panel_2_experiment_vs_simulation": {
+          "max_absolute_difference": 0.0206527271368806,
+          "mean_absolute_difference": 0.0028801165251900215,
+          "relative_frobenius": 0.9997928699140198,
+          "rmse": 0.005429961904941844
+        }
+      },
+      "size": 12
+    },
+    "Fig 3d": {
+      "entries": 144,
+      "experiment_vs_simulation": {
+        "panel_1_experiment_vs_simulation": {
+          "max_absolute_difference": 0.0157459875809812,
+          "mean_absolute_difference": 0.0009077821203782617,
+          "relative_frobenius": 0.3264812838582469,
+          "rmse": 0.0017081775141948449
+        },
+        "panel_2_experiment_vs_simulation": {
+          "max_absolute_difference": 0.00217247331671388,
+          "mean_absolute_difference": 0.0005693252170697186,
+          "relative_frobenius": 1.0,
+          "rmse": 0.0007200689045673036
+        }
+      },
+      "size": 12
+    }
+  },
+  "hardware_calibrated_ftqc_validated": false,
+  "schema": "ftqc.public-evidence-receipt.v1",
+  "source_sha256": "36064e2cb3711065ca6b25d5a6088d66b4df2e47b4f6fb8de09f422ccbb7574f",
+  "study": "Xanadu Aurora numerical figure matrix replot"
+}

@@ -1,0 +1,76 @@
+{
+  "reference_workload": {
+    "distance": 5,
+    "logical_qubits": 4,
+    "syndrome_rounds_per_window": 5,
+    "memory_windows": 10
+  },
+  "scenarios": [
+    {
+      "profile": "photonic",
+      "name": "illustrative optical delivery - fewer sources",
+      "sources": 2,
+      "source_attempts_per_us": 10,
+      "heralding_success": 0.35,
+      "path_transmission": [0.90, 0.85, 0.90],
+      "state_equivalents_per_patch_round": 3,
+      "measurement_us_per_round": 0.8,
+      "feedforward_us_per_round": 0.6
+    },
+    {
+      "profile": "photonic",
+      "name": "illustrative optical delivery - more sources",
+      "sources": 4,
+      "source_attempts_per_us": 10,
+      "heralding_success": 0.35,
+      "path_transmission": [0.90, 0.85, 0.90],
+      "state_equivalents_per_patch_round": 3,
+      "measurement_us_per_round": 0.8,
+      "feedforward_us_per_round": 0.6
+    },
+    {
+      "profile": "superconducting",
+      "name": "illustrative fast readout",
+      "one_qubit_us": 0.025,
+      "two_qubit_us": 0.2,
+      "readout_reset_us": 0.5,
+      "decode_us_per_window": 1.0,
+      "one_qubit_layers_per_round": 2,
+      "two_qubit_layers_per_round": 4
+    },
+    {
+      "profile": "superconducting",
+      "name": "illustrative slow readout",
+      "one_qubit_us": 0.025,
+      "two_qubit_us": 0.2,
+      "readout_reset_us": 1.5,
+      "decode_us_per_window": 1.0,
+      "one_qubit_layers_per_round": 2,
+      "two_qubit_layers_per_round": 4
+    },
+    {
+      "profile": "trapped_ion",
+      "name": "illustrative 2 gate zones",
+      "entangling_gate_us": 15,
+      "transport_us": 8,
+      "readout_reset_us": 75,
+      "decode_us_per_window": 20,
+      "gates_per_patch_round": 6,
+      "transfers_per_patch_round": 2,
+      "parallel_gate_zones": 2,
+      "parallel_transport_zones": 2
+    },
+    {
+      "profile": "trapped_ion",
+      "name": "illustrative 4 gate zones",
+      "entangling_gate_us": 15,
+      "transport_us": 8,
+      "readout_reset_us": 75,
+      "decode_us_per_window": 20,
+      "gates_per_patch_round": 6,
+      "transfers_per_patch_round": 2,
+      "parallel_gate_zones": 4,
+      "parallel_transport_zones": 2
+    }
+  ]
+}

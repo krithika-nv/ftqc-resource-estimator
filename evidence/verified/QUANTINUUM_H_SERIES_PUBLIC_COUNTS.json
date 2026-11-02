@@ -1,0 +1,43 @@
+{
+  "hardware_calibrated_ftqc_validated": false,
+  "limitation": "H-series data are NOT Helios data; no device identity conflation, no universal logical QEC inference",
+  "n_source_experiments": 2,
+  "protocols": [
+    {
+      "benchmark_protocol": "SPAM",
+      "device": "H2-2",
+      "first_condition": {
+        "condition": "prepared_1",
+        "qubits": "0",
+        "shots": 10000,
+        "success_fraction": 0.9983,
+        "successes": 9983,
+        "wilson95": [
+          0.9972790145849042,
+          0.9989382926388795
+        ]
+      },
+      "n_conditions": 16,
+      "source_sha256": "a61eaeb0877e1b7ec4601aae446bc5f71fa4cba939964cccf0b3b0ed40b06921"
+    },
+    {
+      "benchmark_protocol": "TQ_RB",
+      "device": "H2-2",
+      "first_condition": {
+        "condition": "2_rep_7",
+        "qubits": "0, 1",
+        "shots": 100,
+        "success_fraction": 1.0,
+        "successes": 100,
+        "wilson95": [
+          0.9630065017930163,
+          1
+        ]
+      },
+      "n_conditions": 128,
+      "source_sha256": "b28b42e83305bf4290602abaede5505e0e0827048461b96d751d7915375dee5c"
+    }
+  ],
+  "schema": "ftqc.public-evidence-receipt.v1",
+  "study": "Separate Quantinuum H-series public benchmark raw numerical counts"
+}

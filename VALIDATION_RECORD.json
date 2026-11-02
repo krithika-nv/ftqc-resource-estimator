@@ -1,0 +1,22 @@
+{
+  "scope": "analysis software with explicit evidence boundaries",
+  "regression_test_result": {
+    "tests": 285,
+    "passed": 283,
+    "skipped": 2
+  },
+  "checks": [
+    "clean source-only archive",
+    "four GitHub Actions YAML workflows parsed",
+    "real IBM Fez first job majority 16384 shots verified",
+    "Aurora figure-data report sourced from supplied review bundle",
+    "Helios MCMR cached notebook output extracted without pickle execution",
+    "central ci profile passed after command relocation",
+    "shell syntax and entrypoint relocation tests passed",
+    "all four GitHub Actions YAML workflows parsed"
+  ],
+  "experimental_caveat": "No four-platform independently hardware-calibrated universal FTQC prediction or all-family held-out experiment is established.",
+  "large_vendor_data_included": false,
+  "source_archive_fez_md5": "27ce2827dde0713a436179121bfd7173",
+  "record_scope": "source-only project validation snapshot (local test rerun and static audit; not proof of GitHub-hosted execution)"
+}

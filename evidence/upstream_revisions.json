@@ -1,0 +1,31 @@
+{
+  "schema": "ftqc.external-revisions.v1",
+  "scope": "Observed Git HEAD revisions are external-source alerts, not verified experimental claims. Review authors, license, files, and benchmark protocol before analysis.",
+  "sources": {
+    "aurora": {
+      "head_revision": null,
+      "mode": "revision-monitor-only",
+      "url": "https://github.com/XanaduAI/xanadu-aurora-data.git"
+    },
+    "gkp": {
+      "head_revision": null,
+      "mode": "revision-monitor-only",
+      "url": "https://github.com/XanaduAI/xanadu-gkp-data.git"
+    },
+    "helios": {
+      "head_revision": null,
+      "mode": "revision-monitor-only",
+      "url": "https://github.com/Quantinuum/Helios-paper-data.git"
+    },
+    "ion-specs": {
+      "head_revision": null,
+      "mode": "revision-monitor-only",
+      "url": "https://github.com/Quantinuum/quantinuum-hardware-specifications.git"
+    },
+    "neutral-code": {
+      "head_revision": null,
+      "mode": "revision-monitor-only",
+      "url": "https://github.com/oscars47/RydSFF.git"
+    }
+  }
+}

@@ -1,0 +1,458 @@
+{
+  "schema": "ftqc.gate-review-candidates.v1",
+  "automatically_accepted": 0,
+  "families": {
+    "superconducting": {
+      "device_calibration": {
+        "status": "candidate_requires_scientific_review",
+        "candidate_artifacts": [
+          {
+            "artifact": "evidence/verified/IBM_FEZ_READOUT_ONLY_SMOKE.json",
+            "sha256": "39cfddc73cc293499ac8d2fce31bb018d5c6baa51d89717d8f9837755552f9f0",
+            "bytes": 3269
+          }
+        ],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "circuit_level_noise": {
+        "status": "candidate_requires_scientific_review",
+        "candidate_artifacts": [
+          {
+            "artifact": "evidence/verified/IBM_FEZ_READOUT_ONLY_SMOKE.json",
+            "sha256": "39cfddc73cc293499ac8d2fce31bb018d5c6baa51d89717d8f9837755552f9f0",
+            "bytes": 3269
+          }
+        ],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "syndrome_decoder": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "logical_memory": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "logical_clifford_gates": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "nonclifford_factory": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "routing_scheduler": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "physical_resource_accounting": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "independent_holdout": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      }
+    },
+    "photonic": {
+      "loss_squeezing_gkp_characterization": {
+        "status": "candidate_requires_scientific_review",
+        "candidate_artifacts": [
+          {
+            "artifact": "evidence/verified/AURORA_WORKBOOK_REPRODUCTION.json",
+            "sha256": "8ed3c851ef964fbf6d02f2584c3ca805fd425642cd89244b3f4b7b466d657b27",
+            "bytes": 1636
+          }
+        ],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "gkp_noise_and_decoder": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "logical_memory": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "logical_clifford_gates": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "nonclifford_factory": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "optical_routing_and_multiplexing": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "physical_resource_accounting": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "independent_holdout": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      }
+    },
+    "trapped_ion": {
+      "gate_spam_leakage_calibration": {
+        "status": "candidate_requires_scientific_review",
+        "candidate_artifacts": [
+          {
+            "artifact": "evidence/verified/HELIOS_MCMR_ORIGINAL_COUNTS_REPRODUCTION.json",
+            "sha256": "57e980a7b7adcc659725cdc417b3fda67c826d183bccdfe53047f037fee4feae",
+            "bytes": 2165
+          },
+          {
+            "artifact": "evidence/verified/QUANTINUUM_H_SERIES_PUBLIC_COUNTS.json",
+            "sha256": "44818eb8f8994dd4953c4213b4e09494f2bb2d441d91dea1e0b45730acda8e06",
+            "bytes": 1249
+          }
+        ],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "transport_and_crosstalk": {
+        "status": "candidate_requires_scientific_review",
+        "candidate_artifacts": [
+          {
+            "artifact": "evidence/verified/HELIOS_MCMR_ORIGINAL_COUNTS_REPRODUCTION.json",
+            "sha256": "57e980a7b7adcc659725cdc417b3fda67c826d183bccdfe53047f037fee4feae",
+            "bytes": 2165
+          }
+        ],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "native_logical_code_decoder": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "logical_memory": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "logical_clifford_gates": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "nonclifford_factory": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "routing_scheduler": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "physical_resource_accounting": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "independent_holdout": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      }
+    },
+    "neutral_atom": {
+      "gate_loss_rearrangement_calibration": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "erasure_aware_decoder": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "logical_memory": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "logical_clifford_gates": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "nonclifford_factory": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "replenishment_and_parallel_zones": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "physical_resource_accounting": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      },
+      "independent_holdout": {
+        "status": "no_candidate_artifact",
+        "candidate_artifacts": [],
+        "review_requirements": [
+          "Verify original experimental source and method against paper",
+          "Confirm observable and platform match this gate, not a weaker proxy",
+          "Confirm source/holdout independence and confidence analysis",
+          "Confirm hardware-native logical operation or architecture scope",
+          "Obtain independent reviewer decision"
+        ],
+        "accepted": false
+      }
+    }
+  },
+  "warning": "Evidence attachment is not independent scientific validation; none of these files automatically passes the strict 34 gates."
+}

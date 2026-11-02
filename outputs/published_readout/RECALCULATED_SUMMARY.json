@@ -1,0 +1,31 @@
+{
+  "source": "https://arxiv.org/html/2610.23840",
+  "device": "IBM Nighthawk r2, ibm_phoenix",
+  "readout_saved_us": 0.8,
+  "readout_relative_reduction_percent": 41.23711340206186,
+  "derived_data_status": "published_rounded_summary_arithmetic_only",
+  "X_memory": {
+    "reported_standard_epsilon_percent": 1.67,
+    "reported_short_epsilon_percent": 0.98,
+    "derived_absolute_reduction_percentage_points": 0.69,
+    "derived_relative_reduction_percent": 41.31736526946108
+  },
+  "Z_memory": {
+    "reported_standard_epsilon_percent": 0.82,
+    "reported_short_epsilon_percent": 0.63,
+    "derived_absolute_reduction_percentage_points": 0.18999999999999995,
+    "derived_relative_reduction_percent": 23.170731707317067
+  },
+  "bit_flip_associated": {
+    "measured_change_percentage_points": 0.22,
+    "coherence_prediction_change_percentage_points": 0.23,
+    "observed_minus_model_percentage_points": -0.010000000000000009,
+    "measured_to_model_ratio": 0.9565217391304347
+  },
+  "phase_associated": {
+    "measured_change_percentage_points": 0.95,
+    "coherence_prediction_change_percentage_points": 0.22,
+    "observed_minus_model_percentage_points": 0.73,
+    "measured_to_model_ratio": 4.318181818181818
+  }
+}

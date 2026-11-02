@@ -1,0 +1,89 @@
+name: Analysis results - validate, archive, publish
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validated-results-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  offline-evidence:
+    name: Test and archive offline models
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install and execute offline studies
+        run: |
+          python -m pip install -e . matplotlib
+          bash scripts/commands/RUN_ARCHITECTURE_STUDY.sh
+          bash scripts/commands/RUN_HARDWARE_STUDY.sh
+          bash scripts/commands/RUN_PUBLISHED_READOUT_AUDIT.sh
+          bash scripts/commands/RUN_PUBLIC_CALIBRATION.sh
+          python scripts/tools/plot_public_calibration.py
+      - name: Audit and stage only allowlisted outputs
+        run: python scripts/tools/prepare_results.py --mode offline --output-dir build/publication
+      - name: Downloadable numerical outputs on every successful run
+        uses: actions/upload-artifact@v4
+        with:
+          name: offline-validated-results-${{ github.run_id }}
+          path: build/publication/
+          if-no-files-found: error
+          retention-days: 30
+
+  scientific-release:
+    name: Verify all real scientific backends and publish results branch
+    needs: offline-evidence
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run real backends plus reproducible numerical studies
+        run: |
+          python -m pip install -e '.[analysis]' matplotlib
+          bash scripts/commands/RUN_ARCHITECTURE_STUDY.sh
+          bash scripts/commands/RUN_HARDWARE_STUDY.sh
+          bash scripts/commands/RUN_PUBLISHED_READOUT_AUDIT.sh
+          bash scripts/commands/RUN_PUBLIC_CALIBRATION.sh
+          python scripts/tools/plot_public_calibration.py
+          bash scripts/commands/RUN_STIM_MEMORY.sh
+          bash scripts/commands/RUN_STIM_MEMORY_FOLLOWUP.sh
+          bash scripts/commands/RUN_LITERATURE_BENCHMARK.sh
+          bash scripts/commands/RUN_CONTROLLER_CAPACITY.sh
+          bash scripts/commands/RUN_IDLE_COHERENCE_STUDY.sh
+      - name: Preserve unverified partial outputs for failure diagnosis only
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: UNVERIFIED-debug-${{ github.run_id }}
+          path: |
+            outputs/stim_memory/
+            outputs/architecture_study/
+          if-no-files-found: warn
+          retention-days: 7
+      - name: Confirm all required real records and make safe publication bundle
+        run: python scripts/tools/prepare_results.py --mode full --output-dir build/publication
+      - name: Preserve reviewed numerical outputs for download
+        uses: actions/upload-artifact@v4
+        with:
+          name: validated-validated-results-${{ github.run_id }}
+          path: build/publication/
+          if-no-files-found: error
+          retention-days: 90
+      - name: Publish validated outputs to validated-results branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash scripts/commands/publish_results_branch.sh build/publication

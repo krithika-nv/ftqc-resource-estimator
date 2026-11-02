@@ -1,0 +1,41 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.DS_Store
+.venv/
+
+# Local execution logs and temporary Python symlinks
+logs/
+.local-bin/
+
+# Original externally downloaded device snapshot (fetch on local machine)
+data/public_calibrations/
+
+# External modern device calibration archives and local authenticated exports
+outputs/modern_calibration/
+
+# Owner-downloaded calibration archives and generated matched-hardware evidence
+# External public experimental raw shots are not bundled into source control.
+data/public_calibrations/2026/*.tar.gz
+outputs/matched_hardware_evidence/
+
+# Large external vendor datasets and generated source-scoped inventories
+data/external_hardware/
+outputs/hardware_dataset_imports/
+
+# Platform-specific external numerical experiment outputs
+outputs/platform_numeric/
+outputs/neutral_atom_schedule_illustrative/
+
+# Automatically downloaded third-party data, author code, evidence and normalized records
+# (never store raw snapshots in Git; upload only provenance-approved analysis outputs)
+data/verified/
+outputs/external_validation/
+outputs/external_hardware/
+
+# Automatically produced small analysis handoff bundles
+outputs/FOUR_PLATFORM_REVIEW_BUNDLE.zip
+outputs/IBM_REVIEW_BUNDLE.zip

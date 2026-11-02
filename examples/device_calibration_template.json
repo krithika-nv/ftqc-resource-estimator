@@ -1,0 +1,18 @@
+{
+  "classification": "NO_CALIBRATED_DEVICE_PROFILE_AVAILABLE",
+  "device_identifier": null,
+  "parameter_device_identifier": null,
+  "schedule_device_identifier": null,
+  "calibration_timestamp_utc": null,
+  "primary_source_url": null,
+  "coherence_method": null,
+  "t1_us": null,
+  "t2_ramsey_us": null,
+  "readout_short_us": null,
+  "readout_standard_us": null,
+  "concurrent_readout_capacity": null,
+  "schedule_source_url": null,
+  "idle_placement": null,
+  "noise_correlation_source": null,
+  "notes": "Populate only with actual same-device measurements. Do not substitute the Willow T2_CPMG or IBM Hahn-echo T2; do not treat IBM's reported durations as channel-capacity measurements. Passing the metadata gate alone is not experimental validation."
+}

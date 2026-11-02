@@ -1,0 +1,64 @@
+{
+  "status": "complete_figure_data_replot",
+  "source_url": "https://github.com/XanaduAI/xanadu-aurora-data",
+  "workbook_sha256": "36064e2cb3711065ca6b25d5a6088d66b4df2e47b4f6fb8de09f422ccbb7574f",
+  "reproductions": {
+    "Fig 3c": {
+      "size": 12,
+      "entries": 144,
+      "labels": [
+        "experimental X measurement",
+        "experimental Z measurement",
+        "simulated X measurement",
+        "simulated Z measurement"
+      ],
+      "experiment_vs_simulation": {
+        "panel_1_experiment_vs_simulation": {
+          "mean_absolute_difference": 0.0029237532266207927,
+          "rmse": 0.005688410010399236,
+          "max_absolute_difference": 0.0212995282345992,
+          "relative_frobenius": 0.8189258332396814
+        },
+        "panel_2_experiment_vs_simulation": {
+          "mean_absolute_difference": 0.0028801165251900215,
+          "rmse": 0.005429961904941844,
+          "max_absolute_difference": 0.0206527271368806,
+          "relative_frobenius": 0.9997928699140198
+        }
+      },
+      "data_csv": "Fig_3c_matrix_data.csv",
+      "figure": "Fig_3c_replot.png"
+    },
+    "Fig 3d": {
+      "size": 12,
+      "entries": 144,
+      "labels": [
+        "experimental feedforward",
+        "experimental no feedforward",
+        "simulated feedforward",
+        "simulated no feedforward"
+      ],
+      "experiment_vs_simulation": {
+        "panel_1_experiment_vs_simulation": {
+          "mean_absolute_difference": 0.0009077821203782617,
+          "rmse": 0.0017081775141948449,
+          "max_absolute_difference": 0.0157459875809812,
+          "relative_frobenius": 0.3264812838582469
+        },
+        "panel_2_experiment_vs_simulation": {
+          "mean_absolute_difference": 0.0005693252170697186,
+          "rmse": 0.0007200689045673036,
+          "max_absolute_difference": 0.00217247331671388,
+          "relative_frobenius": 1.0
+        }
+      },
+      "data_csv": "Fig_3d_matrix_data.csv",
+      "figure": "Fig_3d_replot.png"
+    }
+  },
+  "limitations": [
+    "This replots the paper-supplied matrix numbers; it is not an independent reconstruction from raw quadrature samples.",
+    "No uncertainty is inferred because the supplied matrix values do not contain shot-level uncertainty information.",
+    "The original Nature figure layout is not asserted identical to the new plot."
+  ]
+}

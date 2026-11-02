@@ -1,0 +1,294 @@
+{
+  "schema": "ftqc.conditional-four-family-profiles.v1",
+  "description": "Four DISTINCT sensitivity scenarios; ALL assumptions are hypothetical and NOT independently calibrated or valid for cross-technology rankings.",
+  "families": {
+    "superconducting": {
+      "schema": "ftqc.conditional-native-architecture.v1",
+      "hardware_family": "superconducting",
+      "input_evidence_class": "illustrative_assumptions_unvalidated",
+      "device_id": "toy_not_hardware",
+      "operation_durations_us": {
+        "prepare": 20.0,
+        "memory_cycle": 5.0,
+        "clifford_1q": 10.0,
+        "clifford_2q": 50.0,
+        "t_gate": 100.0,
+        "measure": 20.0
+      },
+      "operation_failure_probabilities": {
+        "prepare": 0.001,
+        "memory_cycle": 1e-05,
+        "clifford_1q": 0.0001,
+        "clifford_2q": 0.001,
+        "t_gate": 0.002,
+        "measure": 0.001
+      },
+      "non_clifford_supply": {
+        "attempt_duration_us": 200.0,
+        "accepted_state_probability": 0.8,
+        "logical_error_probability_per_accepted_state": 0.001
+      },
+      "physical_resource_assumptions": {
+        "native_unit": "superconducting_physical_sites_scenario",
+        "logical_data_units": 120.0,
+        "factory_units_per_lane": 60.0,
+        "factory_lanes": 2,
+        "control_units": 15.0,
+        "communication_units": 5.0
+      },
+      "communication_critical_path_us": 500.0,
+      "controller_critical_path_us": 200.0,
+      "assumption_note": "UNVALIDATED native engineering scenario multipliers: {\"communication\": 1.0, \"controller\": 1.0, \"duration\": 1.0, \"factory\": 1.0, \"failure\": 1.0, \"resource\": 1.0, \"unit\": \"superconducting_physical_sites_scenario\"}",
+      "illustrative_failure_probability_ranges": {
+        "prepare": [
+          0.0005,
+          0.0015
+        ],
+        "memory_cycle": [
+          5e-06,
+          1.5000000000000002e-05
+        ],
+        "clifford_1q": [
+          5e-05,
+          0.00015000000000000001
+        ],
+        "clifford_2q": [
+          0.0005,
+          0.0015
+        ],
+        "t_gate": [
+          0.001,
+          0.003
+        ],
+        "measure": [
+          0.0005,
+          0.0015
+        ]
+      },
+      "illustrative_accepted_t_error_range": [
+        0.0005,
+        0.0015
+      ],
+      "illustrative_acceptance_probability_range": [
+        0.7,
+        0.9
+      ]
+    },
+    "photonic": {
+      "schema": "ftqc.conditional-native-architecture.v1",
+      "hardware_family": "photonic",
+      "input_evidence_class": "illustrative_assumptions_unvalidated",
+      "device_id": "toy_not_hardware",
+      "operation_durations_us": {
+        "prepare": 7.0,
+        "memory_cycle": 1.75,
+        "clifford_1q": 3.5,
+        "clifford_2q": 17.5,
+        "t_gate": 35.0,
+        "measure": 7.0
+      },
+      "operation_failure_probabilities": {
+        "prepare": 0.0018000000000000002,
+        "memory_cycle": 1.8e-05,
+        "clifford_1q": 0.00018,
+        "clifford_2q": 0.0018000000000000002,
+        "t_gate": 0.0036000000000000003,
+        "measure": 0.0018000000000000002
+      },
+      "non_clifford_supply": {
+        "attempt_duration_us": 340.0,
+        "accepted_state_probability": 0.8,
+        "logical_error_probability_per_accepted_state": 0.001
+      },
+      "physical_resource_assumptions": {
+        "native_unit": "photonic_capacity_equivalent_scenario",
+        "logical_data_units": 420.0,
+        "factory_units_per_lane": 210.0,
+        "factory_lanes": 2,
+        "control_units": 52.5,
+        "communication_units": 17.5
+      },
+      "communication_critical_path_us": 350.0,
+      "controller_critical_path_us": 260.0,
+      "assumption_note": "UNVALIDATED native engineering scenario multipliers: {\"communication\": 0.7, \"controller\": 1.3, \"duration\": 0.35, \"factory\": 1.7, \"failure\": 1.8, \"resource\": 3.5, \"unit\": \"photonic_capacity_equivalent_scenario\"}",
+      "illustrative_failure_probability_ranges": {
+        "prepare": [
+          0.0009000000000000001,
+          0.0027
+        ],
+        "memory_cycle": [
+          9e-06,
+          2.7000000000000006e-05
+        ],
+        "clifford_1q": [
+          9e-05,
+          0.00027000000000000006
+        ],
+        "clifford_2q": [
+          0.0009000000000000001,
+          0.0027
+        ],
+        "t_gate": [
+          0.0018000000000000002,
+          0.0054
+        ],
+        "measure": [
+          0.0009000000000000001,
+          0.0027
+        ]
+      },
+      "illustrative_accepted_t_error_range": [
+        0.0005,
+        0.0015
+      ],
+      "illustrative_acceptance_probability_range": [
+        0.7,
+        0.9
+      ]
+    },
+    "trapped_ion": {
+      "schema": "ftqc.conditional-native-architecture.v1",
+      "hardware_family": "trapped_ion",
+      "input_evidence_class": "illustrative_assumptions_unvalidated",
+      "device_id": "toy_not_hardware",
+      "operation_durations_us": {
+        "prepare": 180.0,
+        "memory_cycle": 45.0,
+        "clifford_1q": 90.0,
+        "clifford_2q": 450.0,
+        "t_gate": 900.0,
+        "measure": 180.0
+      },
+      "operation_failure_probabilities": {
+        "prepare": 0.0006,
+        "memory_cycle": 6e-06,
+        "clifford_1q": 6e-05,
+        "clifford_2q": 0.0006,
+        "t_gate": 0.0012,
+        "measure": 0.0006
+      },
+      "non_clifford_supply": {
+        "attempt_duration_us": 800.0,
+        "accepted_state_probability": 0.8,
+        "logical_error_probability_per_accepted_state": 0.001
+      },
+      "physical_resource_assumptions": {
+        "native_unit": "ion_capacity_equivalent_scenario",
+        "logical_data_units": 90.0,
+        "factory_units_per_lane": 45.0,
+        "factory_lanes": 2,
+        "control_units": 11.25,
+        "communication_units": 3.75
+      },
+      "communication_critical_path_us": 1050.0,
+      "controller_critical_path_us": 540.0,
+      "assumption_note": "UNVALIDATED native engineering scenario multipliers: {\"communication\": 2.1, \"controller\": 2.7, \"duration\": 9.0, \"factory\": 4.0, \"failure\": 0.6, \"resource\": 0.75, \"unit\": \"ion_capacity_equivalent_scenario\"}",
+      "illustrative_failure_probability_ranges": {
+        "prepare": [
+          0.0003,
+          0.0009
+        ],
+        "memory_cycle": [
+          3e-06,
+          9e-06
+        ],
+        "clifford_1q": [
+          3e-05,
+          9e-05
+        ],
+        "clifford_2q": [
+          0.0003,
+          0.0009
+        ],
+        "t_gate": [
+          0.0006,
+          0.0018
+        ],
+        "measure": [
+          0.0003,
+          0.0009
+        ]
+      },
+      "illustrative_accepted_t_error_range": [
+        0.0005,
+        0.0015
+      ],
+      "illustrative_acceptance_probability_range": [
+        0.7,
+        0.9
+      ]
+    },
+    "neutral_atom": {
+      "schema": "ftqc.conditional-native-architecture.v1",
+      "hardware_family": "neutral_atom",
+      "input_evidence_class": "illustrative_assumptions_unvalidated",
+      "device_id": "toy_not_hardware",
+      "operation_durations_us": {
+        "prepare": 56.0,
+        "memory_cycle": 14.0,
+        "clifford_1q": 28.0,
+        "clifford_2q": 140.0,
+        "t_gate": 280.0,
+        "measure": 56.0
+      },
+      "operation_failure_probabilities": {
+        "prepare": 0.0014,
+        "memory_cycle": 1.4e-05,
+        "clifford_1q": 0.00014,
+        "clifford_2q": 0.0014,
+        "t_gate": 0.0028,
+        "measure": 0.0014
+      },
+      "non_clifford_supply": {
+        "attempt_duration_us": 500.0,
+        "accepted_state_probability": 0.8,
+        "logical_error_probability_per_accepted_state": 0.001
+      },
+      "physical_resource_assumptions": {
+        "native_unit": "neutral_atom_capacity_equivalent_scenario",
+        "logical_data_units": 198.0,
+        "factory_units_per_lane": 99.0,
+        "factory_lanes": 2,
+        "control_units": 24.75,
+        "communication_units": 8.25
+      },
+      "communication_critical_path_us": 1750.0,
+      "controller_critical_path_us": 400.0,
+      "assumption_note": "UNVALIDATED native engineering scenario multipliers: {\"communication\": 3.5, \"controller\": 2.0, \"duration\": 2.8, \"factory\": 2.5, \"failure\": 1.4, \"resource\": 1.65, \"unit\": \"neutral_atom_capacity_equivalent_scenario\"}",
+      "illustrative_failure_probability_ranges": {
+        "prepare": [
+          0.0007,
+          0.0021
+        ],
+        "memory_cycle": [
+          7e-06,
+          2.1000000000000002e-05
+        ],
+        "clifford_1q": [
+          7e-05,
+          0.00021
+        ],
+        "clifford_2q": [
+          0.0007,
+          0.0021
+        ],
+        "t_gate": [
+          0.0014,
+          0.0042
+        ],
+        "measure": [
+          0.0007,
+          0.0021
+        ]
+      },
+      "illustrative_accepted_t_error_range": [
+        0.0005,
+        0.0015
+      ],
+      "illustrative_acceptance_probability_range": [
+        0.7,
+        0.9
+      ]
+    }
+  }
+}
