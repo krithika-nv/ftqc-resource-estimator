@@ -25,7 +25,7 @@ jobs:
         run: python scripts/automation/run_pipeline.py --profile science --run-id science-${{ github.run_id }}
       - name: Archive scientific reports (not an external hardware validation)
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: science-logs-${{ github.run_id }}
           path: logs/runs/
@@ -33,7 +33,7 @@ jobs:
           if-no-files-found: warn
       - name: Archive generated simulator numerical results
         if: success()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: science-results-${{ github.run_id }}
           path: |

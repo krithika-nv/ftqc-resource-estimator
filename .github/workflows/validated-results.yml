@@ -31,7 +31,7 @@ jobs:
       - name: Audit and stage only allowlisted outputs
         run: python scripts/tools/prepare_results.py --mode offline --output-dir build/publication
       - name: Downloadable numerical outputs on every successful run
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: offline-validated-results-${{ github.run_id }}
           path: build/publication/
@@ -66,7 +66,7 @@ jobs:
           bash scripts/commands/RUN_IDLE_COHERENCE_STUDY.sh
       - name: Preserve unverified partial outputs for failure diagnosis only
         if: failure()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: UNVERIFIED-debug-${{ github.run_id }}
           path: |
@@ -77,7 +77,7 @@ jobs:
       - name: Confirm all required real records and make safe publication bundle
         run: python scripts/tools/prepare_results.py --mode full --output-dir build/publication
       - name: Preserve reviewed numerical outputs for download
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: validated-validated-results-${{ github.run_id }}
           path: build/publication/

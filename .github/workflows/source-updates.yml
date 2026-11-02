@@ -46,7 +46,7 @@ jobs:
             and test outcome before merging. Raw large datasets are NOT committed.
       - name: Archive revision summary
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: source-revisions-${{ github.run_id }}
           path: |
@@ -72,7 +72,7 @@ jobs:
         run: python scripts/automation/run_pipeline.py --profile evidence --fetch --review-bundle --run-id external-${{ github.run_id }} ${{ inputs.download_large_neutral && '--download-large-neutral' || '' }}
       - name: Upload metadata and log evidence, not vendor binary files
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: external-source-audit-${{ github.run_id }}
           path: |
