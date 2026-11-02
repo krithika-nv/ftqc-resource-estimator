@@ -1,0 +1,37 @@
+name: CI - tests, log archive
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  unit:
+    name: Python ${{ matrix.python-version }} / checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.12', '3.13', '3.14']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install declared scientific and analysis packages
+        run: python -m pip install -e '.[analysis]' matplotlib
+      - name: Execute and log
+        run: python scripts/automation/run_pipeline.py --profile ci --run-id ci-${{ github.run_id }}-${{ matrix.python-version }}
+      - name: Archive logs and status, including failures
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ci-logs-${{ matrix.python-version }}-${{ github.run_id }}
+          path: logs/runs/
+          retention-days: 14
+          if-no-files-found: warn

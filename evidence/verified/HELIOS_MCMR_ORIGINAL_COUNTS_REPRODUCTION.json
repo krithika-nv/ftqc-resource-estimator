@@ -1,0 +1,75 @@
+{
+  "claim": "exact count reconstruction from stored bitstring histograms without executing serialized Python objects",
+  "hardware_calibrated_ftqc_validated": false,
+  "hardware_identity": "Helios-1",
+  "limitation": "Four independent circuit conditions \u00d7 1000 shots; 360 marginal conditions are overlapping views, not independent experiments; author global-fit statistic and logical FTQC not reproduced",
+  "marginal_count_conditions": 360,
+  "original_shots_per_circuit": 1000,
+  "sample_conditions": [
+    {
+      "expected_outcome": "0",
+      "leakage_rate": 0.001,
+      "leakage_shots": 1,
+      "prepared_state": 0,
+      "qubit": 1,
+      "sequence_length": 1,
+      "shots": 1000,
+      "successes": 998,
+      "survival_rate": 0.998,
+      "survival_wilson95": [
+        0.9927371921365081,
+        0.9994513564118793
+      ]
+    },
+    {
+      "expected_outcome": "0",
+      "leakage_rate": 0.002,
+      "leakage_shots": 2,
+      "prepared_state": 1,
+      "qubit": 1,
+      "sequence_length": 1,
+      "shots": 1000,
+      "successes": 998,
+      "survival_rate": 0.998,
+      "survival_wilson95": [
+        0.9927371921365081,
+        0.9994513564118793
+      ]
+    },
+    {
+      "expected_outcome": "0",
+      "leakage_rate": 0.001,
+      "leakage_shots": 1,
+      "prepared_state": 0,
+      "qubit": 1,
+      "sequence_length": 100,
+      "shots": 1000,
+      "successes": 998,
+      "survival_rate": 0.998,
+      "survival_wilson95": [
+        0.9927371921365081,
+        0.9994513564118793
+      ]
+    },
+    {
+      "expected_outcome": "0",
+      "leakage_rate": 0.012,
+      "leakage_shots": 12,
+      "prepared_state": 1,
+      "qubit": 1,
+      "sequence_length": 100,
+      "shots": 1000,
+      "successes": 978,
+      "survival_rate": 0.978,
+      "survival_wilson95": [
+        0.9669143266526008,
+        0.9854272922352088
+      ]
+    }
+  ],
+  "schema": "ftqc.public-evidence-receipt.v1",
+  "source_raw_histograms": 4,
+  "source_sha256": "21e20e64e4413fd1d408acf756773ab4fe2b03dcce3b1cec94bbde6c467657d8",
+  "study": "Quantinuum Helios-1 original MCMR histogram static numerical replay",
+  "verified_match_author_marginals": 360
+}

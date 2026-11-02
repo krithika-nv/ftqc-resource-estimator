@@ -1,0 +1,116 @@
+{
+  "claim": "physical calibration to measured terminal majority failure, NO fitted syndrome noise",
+  "comparisons": 8,
+  "hardware_calibrated_ftqc_validated": false,
+  "limitation": "One-job smoke; independence and full temporal holdout NOT demonstrated; readout-only ideal-bit assumption, no CZ/coherence/correlated errors",
+  "observed": [
+    {
+      "calibration_readout_only_prediction": 8.452531617233909e-12,
+      "chain": "0",
+      "failures": 0,
+      "measured_majority_failure": 0.0,
+      "observed_wilson95": [
+        0,
+        0.0018722006050612757
+      ],
+      "shots": 2048,
+      "snapshot_id": "ibm_fez/d11_r1/job_1",
+      "state": 0
+    },
+    {
+      "calibration_readout_only_prediction": 1.2200160384945073e-11,
+      "chain": "1",
+      "failures": 0,
+      "measured_majority_failure": 0.0,
+      "observed_wilson95": [
+        0,
+        0.0018722006050612757
+      ],
+      "shots": 2048,
+      "snapshot_id": "ibm_fez/d11_r1/job_1",
+      "state": 0
+    },
+    {
+      "calibration_readout_only_prediction": 2.8071137549194897e-13,
+      "chain": "2",
+      "failures": 0,
+      "measured_majority_failure": 0.0,
+      "observed_wilson95": [
+        0,
+        0.0018722006050612757
+      ],
+      "shots": 2048,
+      "snapshot_id": "ibm_fez/d11_r1/job_1",
+      "state": 0
+    },
+    {
+      "calibration_readout_only_prediction": 1.1810700909259617e-10,
+      "chain": "3",
+      "failures": 0,
+      "measured_majority_failure": 0.0,
+      "observed_wilson95": [
+        0,
+        0.0018722006050612757
+      ],
+      "shots": 2048,
+      "snapshot_id": "ibm_fez/d11_r1/job_1",
+      "state": 0
+    },
+    {
+      "calibration_readout_only_prediction": 9.122135601913147e-09,
+      "chain": "0",
+      "failures": 0,
+      "measured_majority_failure": 0.0,
+      "observed_wilson95": [
+        0,
+        0.0018722006050612757
+      ],
+      "shots": 2048,
+      "snapshot_id": "ibm_fez/d11_r1/job_1",
+      "state": 1
+    },
+    {
+      "calibration_readout_only_prediction": 5.398059954482219e-09,
+      "chain": "1",
+      "failures": 0,
+      "measured_majority_failure": 0.0,
+      "observed_wilson95": [
+        0,
+        0.0018722006050612757
+      ],
+      "shots": 2048,
+      "snapshot_id": "ibm_fez/d11_r1/job_1",
+      "state": 1
+    },
+    {
+      "calibration_readout_only_prediction": 7.740420139705594e-10,
+      "chain": "2",
+      "failures": 0,
+      "measured_majority_failure": 0.0,
+      "observed_wilson95": [
+        0,
+        0.0018722006050612757
+      ],
+      "shots": 2048,
+      "snapshot_id": "ibm_fez/d11_r1/job_1",
+      "state": 1
+    },
+    {
+      "calibration_readout_only_prediction": 7.592627029760403e-08,
+      "chain": "3",
+      "failures": 1,
+      "measured_majority_failure": 0.00048828125,
+      "observed_wilson95": [
+        8.619883093704682e-05,
+        0.002760735953220849
+      ],
+      "shots": 2048,
+      "snapshot_id": "ibm_fez/d11_r1/job_1",
+      "state": 1
+    }
+  ],
+  "schema": "ftqc.public-evidence-receipt.v1",
+  "source_sha256": "61ce8e64d45efb1bb4fd8bd883a6bd9232fb0f3d577a3be6bb945e6fb422dfbe",
+  "study": "IBM Fez calibrated terminal-readout-only majority error",
+  "verified_sample": "first Fez d11/r1 job, 16,384 chain-shots, 8 chain-state comparisons"
+}

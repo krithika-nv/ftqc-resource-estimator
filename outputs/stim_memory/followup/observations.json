@@ -1,0 +1,73 @@
+{
+  "schema": "ftqc.rotated_surface_memory.v1",
+  "generated_utc": "2026-10-28T21:57:02+00:00",
+  "generator": "ftqc_resource_estimator.stim_memory",
+  "software": {
+    "stim": "1.16.0",
+    "pymatching": "2.4.0",
+    "numpy": "2.5.3",
+    "python": "3.14.7"
+  },
+  "methods": {
+    "experiment": "memory_fixed_rounds",
+    "code": "stim surface_code:rotated_memory_x",
+    "basis": "X",
+    "rounds": 9,
+    "rounds_rule": "fixed number of syndrome rounds across all distances; no interpolation",
+    "noise_profile": "stim_uniform_circuit_noise_v1",
+    "noise_knobs": [
+      "after_clifford_depolarization",
+      "before_round_data_depolarization",
+      "before_measure_flip_probability",
+      "after_reset_flip_probability"
+    ],
+    "noise_knob_rule": "All four independently set to the numeric physical_error value in each observation",
+    "decoder": "pymatching_mwpm_from_decomposed_dem",
+    "decoder_model": "circuit.detector_error_model(decompose_errors=True)",
+    "failure": "MWPM-predicted logical flip disagrees with Stim-sampled logical observable",
+    "confidence": "two-sided 95% Wilson binomial interval in downstream analysis",
+    "seed_rule": "seed_base + enumeration index; RNG streams may differ across platforms",
+    "seed_base": 20261025,
+    "caveat": "Rotated surface-code memory, NOT logical gates, GKP photonics, hardware predictions, or thresholds"
+  },
+  "observations": [
+    {
+      "code_family": "rotated_surface",
+      "experiment": "memory_fixed_rounds",
+      "observable_basis": "X",
+      "physical_error": 0.003,
+      "distance": 7,
+      "rounds": 9,
+      "shots": 20000,
+      "failures": 57,
+      "trivial_decoder_failures": 5853,
+      "seed": 20261025,
+      "noise_profile": "stim_uniform_circuit_noise_v1",
+      "decoder": "pymatching_mwpm_from_decomposed_dem",
+      "circuit_sha256": "cc8a972e215d3c1174d47fa37569f21eb7f9aa405d4964f8d77d307fb5d68682",
+      "detector_model_sha256": "0933b2089ce1a60755c9c26c39e49b08ca61f845d56ed1b30af40cafb729d0ae",
+      "detectors": 432,
+      "observables": 1,
+      "batch_single_agreement_checked_shots": 16
+    },
+    {
+      "code_family": "rotated_surface",
+      "experiment": "memory_fixed_rounds",
+      "observable_basis": "X",
+      "physical_error": 0.003,
+      "distance": 9,
+      "rounds": 9,
+      "shots": 20000,
+      "failures": 10,
+      "trivial_decoder_failures": 6897,
+      "seed": 20261026,
+      "noise_profile": "stim_uniform_circuit_noise_v1",
+      "decoder": "pymatching_mwpm_from_decomposed_dem",
+      "circuit_sha256": "b83f66b33f3fc75a30e58cd3b417abdb9ef05b278c5ed2a6ee2eb501a16cf27e",
+      "detector_model_sha256": "09763a3c5afb4589501416c541671225aeee6f0b730dd7ceae2a1aee8dd61482",
+      "detectors": 720,
+      "observables": 1,
+      "batch_single_agreement_checked_shots": 16
+    }
+  ]
+}

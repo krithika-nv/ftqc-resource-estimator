@@ -1,0 +1,22 @@
+{
+  "logical_qubits": 10,
+  "model": "illustrative logical error ansatz, identical chosen coefficients, NOT physical hardware",
+  "operations": 1000,
+  "pareto": [
+    {
+      "distance": 9,
+      "latency_us": 12150.0,
+      "modeled_failure": 0.009950171201084409,
+      "scenario": "fast_cycle_slow_decoder",
+      "sites": 1610
+    },
+    {
+      "distance": 11,
+      "latency_us": 12850.0,
+      "modeled_failure": 0.0009995002165750372,
+      "scenario": "fast_cycle_slow_decoder",
+      "sites": 2410
+    }
+  ],
+  "target_failure": 0.01
+}

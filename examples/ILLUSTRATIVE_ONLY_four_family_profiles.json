@@ -1,0 +1,294 @@
+{
+  "schema": "ftqc.conditional-four-family-profiles.v1",
+  "description": "DEMONSTRATION ONLY. Values identical across families by design; no device calibration or ranking. Native units remain distinct.",
+  "families": {
+    "superconducting": {
+      "schema": "ftqc.conditional-native-architecture.v1",
+      "hardware_family": "superconducting",
+      "input_evidence_class": "illustrative_assumptions_unvalidated",
+      "device_id": "toy_not_hardware",
+      "operation_durations_us": {
+        "prepare": 20,
+        "memory_cycle": 5,
+        "clifford_1q": 10,
+        "clifford_2q": 50,
+        "t_gate": 100,
+        "measure": 20
+      },
+      "operation_failure_probabilities": {
+        "prepare": 0.001,
+        "memory_cycle": 1e-05,
+        "clifford_1q": 0.0001,
+        "clifford_2q": 0.001,
+        "t_gate": 0.002,
+        "measure": 0.001
+      },
+      "non_clifford_supply": {
+        "attempt_duration_us": 200,
+        "accepted_state_probability": 0.8,
+        "logical_error_probability_per_accepted_state": 0.001
+      },
+      "physical_resource_assumptions": {
+        "native_unit": "superconducting_physical_qubits_toy",
+        "logical_data_units": 120,
+        "factory_units_per_lane": 60,
+        "factory_lanes": 2,
+        "control_units": 15,
+        "communication_units": 5
+      },
+      "communication_critical_path_us": 500,
+      "controller_critical_path_us": 200,
+      "assumption_note": "TOY values for unit tests/CLI demo only; not vendor data, hardware fit, or a four-technology ranking.",
+      "illustrative_failure_probability_ranges": {
+        "prepare": [
+          0.0005,
+          0.0015
+        ],
+        "memory_cycle": [
+          5e-06,
+          1.5000000000000002e-05
+        ],
+        "clifford_1q": [
+          5e-05,
+          0.00015000000000000001
+        ],
+        "clifford_2q": [
+          0.0005,
+          0.0015
+        ],
+        "t_gate": [
+          0.001,
+          0.003
+        ],
+        "measure": [
+          0.0005,
+          0.0015
+        ]
+      },
+      "illustrative_accepted_t_error_range": [
+        0.0005,
+        0.0015
+      ],
+      "illustrative_acceptance_probability_range": [
+        0.7,
+        0.9
+      ]
+    },
+    "photonic": {
+      "schema": "ftqc.conditional-native-architecture.v1",
+      "hardware_family": "photonic",
+      "input_evidence_class": "illustrative_assumptions_unvalidated",
+      "device_id": "toy_not_hardware",
+      "operation_durations_us": {
+        "prepare": 20,
+        "memory_cycle": 5,
+        "clifford_1q": 10,
+        "clifford_2q": 50,
+        "t_gate": 100,
+        "measure": 20
+      },
+      "operation_failure_probabilities": {
+        "prepare": 0.001,
+        "memory_cycle": 1e-05,
+        "clifford_1q": 0.0001,
+        "clifford_2q": 0.001,
+        "t_gate": 0.002,
+        "measure": 0.001
+      },
+      "non_clifford_supply": {
+        "attempt_duration_us": 200,
+        "accepted_state_probability": 0.8,
+        "logical_error_probability_per_accepted_state": 0.001
+      },
+      "physical_resource_assumptions": {
+        "native_unit": "photonic_modes_toy",
+        "logical_data_units": 120,
+        "factory_units_per_lane": 60,
+        "factory_lanes": 2,
+        "control_units": 15,
+        "communication_units": 5
+      },
+      "communication_critical_path_us": 500,
+      "controller_critical_path_us": 200,
+      "assumption_note": "TOY values for unit tests/CLI demo only; not vendor data, hardware fit, or a four-technology ranking.",
+      "illustrative_failure_probability_ranges": {
+        "prepare": [
+          0.0005,
+          0.0015
+        ],
+        "memory_cycle": [
+          5e-06,
+          1.5000000000000002e-05
+        ],
+        "clifford_1q": [
+          5e-05,
+          0.00015000000000000001
+        ],
+        "clifford_2q": [
+          0.0005,
+          0.0015
+        ],
+        "t_gate": [
+          0.001,
+          0.003
+        ],
+        "measure": [
+          0.0005,
+          0.0015
+        ]
+      },
+      "illustrative_accepted_t_error_range": [
+        0.0005,
+        0.0015
+      ],
+      "illustrative_acceptance_probability_range": [
+        0.7,
+        0.9
+      ]
+    },
+    "trapped_ion": {
+      "schema": "ftqc.conditional-native-architecture.v1",
+      "hardware_family": "trapped_ion",
+      "input_evidence_class": "illustrative_assumptions_unvalidated",
+      "device_id": "toy_not_hardware",
+      "operation_durations_us": {
+        "prepare": 20,
+        "memory_cycle": 5,
+        "clifford_1q": 10,
+        "clifford_2q": 50,
+        "t_gate": 100,
+        "measure": 20
+      },
+      "operation_failure_probabilities": {
+        "prepare": 0.001,
+        "memory_cycle": 1e-05,
+        "clifford_1q": 0.0001,
+        "clifford_2q": 0.001,
+        "t_gate": 0.002,
+        "measure": 0.001
+      },
+      "non_clifford_supply": {
+        "attempt_duration_us": 200,
+        "accepted_state_probability": 0.8,
+        "logical_error_probability_per_accepted_state": 0.001
+      },
+      "physical_resource_assumptions": {
+        "native_unit": "ions_toy",
+        "logical_data_units": 120,
+        "factory_units_per_lane": 60,
+        "factory_lanes": 2,
+        "control_units": 15,
+        "communication_units": 5
+      },
+      "communication_critical_path_us": 500,
+      "controller_critical_path_us": 200,
+      "assumption_note": "TOY values for unit tests/CLI demo only; not vendor data, hardware fit, or a four-technology ranking.",
+      "illustrative_failure_probability_ranges": {
+        "prepare": [
+          0.0005,
+          0.0015
+        ],
+        "memory_cycle": [
+          5e-06,
+          1.5000000000000002e-05
+        ],
+        "clifford_1q": [
+          5e-05,
+          0.00015000000000000001
+        ],
+        "clifford_2q": [
+          0.0005,
+          0.0015
+        ],
+        "t_gate": [
+          0.001,
+          0.003
+        ],
+        "measure": [
+          0.0005,
+          0.0015
+        ]
+      },
+      "illustrative_accepted_t_error_range": [
+        0.0005,
+        0.0015
+      ],
+      "illustrative_acceptance_probability_range": [
+        0.7,
+        0.9
+      ]
+    },
+    "neutral_atom": {
+      "schema": "ftqc.conditional-native-architecture.v1",
+      "hardware_family": "neutral_atom",
+      "input_evidence_class": "illustrative_assumptions_unvalidated",
+      "device_id": "toy_not_hardware",
+      "operation_durations_us": {
+        "prepare": 20,
+        "memory_cycle": 5,
+        "clifford_1q": 10,
+        "clifford_2q": 50,
+        "t_gate": 100,
+        "measure": 20
+      },
+      "operation_failure_probabilities": {
+        "prepare": 0.001,
+        "memory_cycle": 1e-05,
+        "clifford_1q": 0.0001,
+        "clifford_2q": 0.001,
+        "t_gate": 0.002,
+        "measure": 0.001
+      },
+      "non_clifford_supply": {
+        "attempt_duration_us": 200,
+        "accepted_state_probability": 0.8,
+        "logical_error_probability_per_accepted_state": 0.001
+      },
+      "physical_resource_assumptions": {
+        "native_unit": "atoms_toy",
+        "logical_data_units": 120,
+        "factory_units_per_lane": 60,
+        "factory_lanes": 2,
+        "control_units": 15,
+        "communication_units": 5
+      },
+      "communication_critical_path_us": 500,
+      "controller_critical_path_us": 200,
+      "assumption_note": "TOY values for unit tests/CLI demo only; not vendor data, hardware fit, or a four-technology ranking.",
+      "illustrative_failure_probability_ranges": {
+        "prepare": [
+          0.0005,
+          0.0015
+        ],
+        "memory_cycle": [
+          5e-06,
+          1.5000000000000002e-05
+        ],
+        "clifford_1q": [
+          5e-05,
+          0.00015000000000000001
+        ],
+        "clifford_2q": [
+          0.0005,
+          0.0015
+        ],
+        "t_gate": [
+          0.001,
+          0.003
+        ],
+        "measure": [
+          0.0005,
+          0.0015
+        ]
+      },
+      "illustrative_accepted_t_error_range": [
+        0.0005,
+        0.0015
+      ],
+      "illustrative_acceptance_probability_range": [
+        0.7,
+        0.9
+      ]
+    }
+  }
+}

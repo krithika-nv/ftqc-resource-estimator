@@ -1,0 +1,132 @@
+{
+  "catalog_version": "2026-10-30",
+  "policy": "Source-specific raw files are external and opt-in. Indexing provenance is not physical calibration, cross-platform prediction or numeric equivalence.",
+  "sources": [
+    {
+      "id": "ibm_qec_zenodo_2026",
+      "hardware_family": "superconducting",
+      "provider": "IBM Quantum / PNNL",
+      "data_type": "paired calibration, raw repetition-code experiments and executed circuits",
+      "status": "existing_matched_ibm_pairing_and_source_indexing",
+      "url": "https://doi.org/10.5281/zenodo.20768087",
+      "code_family": "repetition",
+      "adapter": "matched_hardware_evidence.py",
+      "critical_gaps": [
+        "same_device_same_protocol_hardware_outcomes",
+        "correlated_error_model",
+        "independent_validation"
+      ],
+      "calibrates_surface_code": false,
+      "data_format": "ibm_{fez,kingston,pittsburgh}.tar.gz paired calibration/info/bitstrings/QASM"
+    },
+    {
+      "id": "ibm_live_properties",
+      "hardware_family": "superconducting",
+      "provider": "IBM Quantum",
+      "data_type": "current periodic calibration / benchmarking properties",
+      "status": "authenticated_export_and_source_indexing",
+      "url": "https://quantum.cloud.ibm.com/docs/en/guides/qpu-information",
+      "code_family": null,
+      "adapter": "export_live_ibm_calibration.py",
+      "critical_gaps": [
+        "same_device_same_protocol_hardware_outcomes",
+        "correlated_error_model",
+        "independent_validation"
+      ],
+      "calibrates_surface_code": false,
+      "data_format": "IBM backend.properties JSON exported with Qiskit"
+    },
+    {
+      "id": "xanadu_aurora",
+      "hardware_family": "photonic",
+      "provider": "Xanadu Aurora",
+      "data_type": "published photonic networking experiment data",
+      "status": "source_specific_indexer_available_real_files_not_bundled",
+      "url": "https://github.com/XanaduAI/xanadu-aurora-data",
+      "code_family": null,
+      "adapter": "hardware_dataset_adapters.py",
+      "critical_gaps": [
+        "same_device_same_protocol_hardware_outcomes",
+        "correlated_error_model",
+        "independent_validation"
+      ],
+      "calibrates_surface_code": false,
+      "data_format": "Aurora quadratures/switches .npy and publication plot .xlsx; S3 download separate",
+      "download_policy": "No automatic S3 download; some batches >400 MB"
+    },
+    {
+      "id": "xanadu_gkp",
+      "hardware_family": "photonic",
+      "provider": "Xanadu GKP",
+      "data_type": "published GKP source optical-state data (14 GB archive)",
+      "status": "source_specific_indexer_available_real_files_not_bundled",
+      "url": "https://github.com/XanaduAI/xanadu-gkp-data",
+      "code_family": "GKP",
+      "adapter": "hardware_dataset_adapters.py",
+      "critical_gaps": [
+        "same_device_same_protocol_hardware_outcomes",
+        "correlated_error_model",
+        "independent_validation"
+      ],
+      "calibrates_surface_code": false,
+      "data_format": "GKP analysis_results.npy; separately 14 GB raw .tar.gz",
+      "download_policy": "Do not fetch or extract raw 14 GB archive automatically"
+    },
+    {
+      "id": "quantinuum_helios",
+      "hardware_family": "trapped_ion",
+      "provider": "Quantinuum Helios",
+      "data_type": "published trapped-ion experimental benchmark data",
+      "status": "source_specific_indexer_available_pickle_opaque",
+      "url": "https://github.com/Quantinuum/Helios-paper-data",
+      "code_family": null,
+      "adapter": "hardware_dataset_adapters.py",
+      "critical_gaps": [
+        "same_device_same_protocol_hardware_outcomes",
+        "correlated_error_model",
+        "independent_validation"
+      ],
+      "calibrates_surface_code": false,
+      "data_format": "Helios published .p serialized objects; index and hash only, NEVER unpickle unknown files",
+      "download_policy": "Git repository cloned only on user request"
+    },
+    {
+      "id": "quantinuum_specifications",
+      "hardware_family": "trapped_ion",
+      "provider": "Quantinuum",
+      "data_type": "published trapped-ion hardware specifications and benchmarks",
+      "status": "source_specific_indexer_available_real_files_not_bundled",
+      "url": "https://github.com/Quantinuum/quantinuum-hardware-specifications",
+      "code_family": null,
+      "adapter": "hardware_dataset_adapters.py",
+      "critical_gaps": [
+        "same_device_same_protocol_hardware_outcomes",
+        "correlated_error_model",
+        "independent_validation"
+      ],
+      "calibrates_surface_code": false,
+      "data_format": "Data sheets and product spec files under data/H1-1,H1-2,H2-1,H2-2,REIMEI",
+      "download_policy": "Git repository cloned only on user request"
+    },
+    {
+      "id": "quera_aquila_2026",
+      "hardware_family": "neutral_atom",
+      "provider": "QuEra Aquila / Scholin et al. 2026",
+      "data_type": "real Aquila randomized-measurement experiments, task metadata, calibration and simulation analysis",
+      "status": "source_specific_indexer_available_real_files_not_bundled",
+      "url": "https://doi.org/10.5287/ora-dow5oapxe",
+      "code_family": null,
+      "adapter": "hardware_dataset_adapters.py",
+      "data_format": "Oxford data.zip, paper_main_data_rest.zip, expt_tasks.zip, task_*.json, full_expt_* and analysis .npy; no direct QEC validation",
+      "code_url": "https://github.com/oscars47/RydSFF",
+      "critical_gaps": [
+        "no_device_matched_QEC_test",
+        "neutral_atom_loss_and_leakage",
+        "hardware_calibration_mapping",
+        "independent_validation"
+      ],
+      "calibrates_surface_code": false,
+      "download_policy": "No automatic multi-GB archive acquisition; user opts in"
+    }
+  ]
+}

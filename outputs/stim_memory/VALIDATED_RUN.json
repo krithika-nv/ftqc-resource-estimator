@@ -1,0 +1,13 @@
+{
+  "status": "PASSED real simulator execution and same-environment replay",
+  "verified_utc": "2026-10-28T19:30:52+00:00",
+  "stim_version": "1.16.0",
+  "pymatching_version": "2.4.0",
+  "numpy_version": "2.5.3",
+  "observation_sha256": "b98b0d53ec743e28deb46960e4bf1ca331b9a73a7bec5aebc0f98f27fc89ea8c",
+  "observations": 9,
+  "total_shots": 180000,
+  "noise_profile": "stim_uniform_circuit_noise_v1",
+  "experiment": "rotated surface-code MEMORY (9 fixed syndrome rounds)",
+  "scope": "not a hardware-calibrated or logical-gate benchmark"
+}

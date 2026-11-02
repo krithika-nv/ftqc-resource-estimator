@@ -1,0 +1,43 @@
+{
+  "data_file_declared_in_author_notebook": "exp_MCMR_Crosstalk_Helios-1_q[0,2,4,6,8,10,12,14]_2026_01_01.p",
+  "evidence_level": "published_author_notebook_output_extraction",
+  "experiment": "MCMR crosstalk",
+  "hardware": "Helios-1",
+  "independent_reanalysis": false,
+  "limitation": "Read-only extraction of saved author notebook output. Not recalculated from .p records; no pickles executed.",
+  "notebook_sha256": "bed19f1931d06b36a3ac8fd2ac1b11aba7e04da5e6d1748e4716e5df929677dc",
+  "physical_noise_model_calibrated": false,
+  "schema": "ftqc.helios.cached_notebook_output.v1",
+  "values": {
+    "Error Channel p(0|1)": {
+      "display_unit": "probability",
+      "published_notebook_plus_minus": 4.7779000000000005e-06,
+      "published_notebook_value": 1.8980700000000003e-05,
+      "source_scale": "1e-4"
+    },
+    "Error Channel p(1|0)": {
+      "display_unit": "probability",
+      "published_notebook_plus_minus": 3.9806000000000005e-06,
+      "published_notebook_value": 7.300600000000001e-06,
+      "source_scale": "1e-4"
+    },
+    "Error Channel p(L|0)": {
+      "display_unit": "probability",
+      "published_notebook_plus_minus": 2.6225e-06,
+      "published_notebook_value": 1.48781e-05,
+      "source_scale": "1e-4"
+    },
+    "Error Channel p(L|1)": {
+      "display_unit": "probability",
+      "published_notebook_plus_minus": 3.0720000000000004e-06,
+      "published_notebook_value": 2.87425e-05,
+      "source_scale": "1e-4"
+    },
+    "Infidelity": {
+      "display_unit": "probability",
+      "published_notebook_plus_minus": 2.8941000000000004e-06,
+      "published_notebook_value": 3.05707e-05,
+      "source_scale": "1e-4"
+    }
+  }
+}

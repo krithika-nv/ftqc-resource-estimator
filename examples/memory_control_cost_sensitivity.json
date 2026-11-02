@@ -1,0 +1,31 @@
+{
+  "comment": "SENSITIVITY STUDY ONLY. Costs assigned for faster classical/control capability are arbitrary normalized site-equivalent proxies, NOT qubit counts or calibrated electronics. Actual common Stim circuit unchanged. Retain original config as the baseline.",
+  "workload": {
+    "logical_qubits": 4,
+    "memory_windows": 10,
+    "target_failure": 0.1
+  },
+  "memory_architectures": [
+    {
+      "name": "high_throughput_control",
+      "cycle_us": 0.5,
+      "decode_us_per_window": 0.5,
+      "reserve_fraction": 0.02,
+      "controller_site_equivalents_per_patch": 40
+    },
+    {
+      "name": "balanced_control_cost",
+      "cycle_us": 1.0,
+      "decode_us_per_window": 1.5,
+      "reserve_fraction": 0.06,
+      "controller_site_equivalents_per_patch": 15
+    },
+    {
+      "name": "cost_minimized_control",
+      "cycle_us": 1.5,
+      "decode_us_per_window": 2.0,
+      "reserve_fraction": 0.0,
+      "controller_site_equivalents_per_patch": 0
+    }
+  ]
+}

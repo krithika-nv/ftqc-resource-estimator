@@ -1,0 +1,26 @@
+{
+  "photonic": {
+    "hardware_family": "photonic",
+    "scenario_model_status": "HYPOTHETICAL_UNCALIBRATED",
+    "device_calibration_used": false,
+    "logical_error_hardware_prediction_validated": false,
+    "can_rank_against_other_families": false,
+    "resource_units_comparable_across_families": false
+  },
+  "superconducting": {
+    "hardware_family": "superconducting",
+    "scenario_model_status": "HYPOTHETICAL_UNCALIBRATED",
+    "device_calibration_used": false,
+    "logical_error_hardware_prediction_validated": false,
+    "can_rank_against_other_families": false,
+    "resource_units_comparable_across_families": false
+  },
+  "trapped_ion": {
+    "hardware_family": "trapped_ion",
+    "scenario_model_status": "HYPOTHETICAL_UNCALIBRATED",
+    "device_calibration_used": false,
+    "logical_error_hardware_prediction_validated": false,
+    "can_rank_against_other_families": false,
+    "resource_units_comparable_across_families": false
+  }
+}

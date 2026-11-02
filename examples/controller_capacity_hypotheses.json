@@ -1,0 +1,9 @@
+{
+  "calibration_status": "HYPOTHETICAL_NOT_HARDWARE_VALIDATED",
+  "disclaimer": "Fabricated numerical scenarios solely for examining readout capacity constraints, not sourced device data; power values are illustrative and must never be interpreted as actual physical hardware measurements.",
+  "controllers": [
+    {"name": "wide_parallel_readout", "concurrent_readout_channels": 256, "readout_slot_us": 0.45, "minimum_round_us": 0.55, "decode_latency_us": 0.8, "power_per_channel_w": 0.35},
+    {"name": "medium_parallel_readout", "concurrent_readout_channels": 128, "readout_slot_us": 0.45, "minimum_round_us": 0.55, "decode_latency_us": 1.4, "power_per_channel_w": 0.35},
+    {"name": "constrained_parallel_readout", "concurrent_readout_channels": 32, "readout_slot_us": 0.45, "minimum_round_us": 0.55, "decode_latency_us": 2.5, "power_per_channel_w": 0.35}
+  ]
+}

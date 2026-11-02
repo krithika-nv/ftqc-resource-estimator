@@ -1,0 +1,3 @@
+profile,scenario,model,runtime_us,critical_path_us,decoder_us,entangling_slots_per_round,transport_slots_per_round,nominal_patch_ions,resource_unit,dominant_bottleneck
+trapped_ion,illustrative 2 gate zones,illustrative_zoned_serial_schedule,14550,14350,200,12,4,196,nominal_data_and_syndrome_ions,serialized_zoned_gate_and_transport_schedule
+trapped_ion,illustrative 4 gate zones,illustrative_zoned_serial_schedule,10050,9850,200,6,4,196,nominal_data_and_syndrome_ions,serialized_zoned_gate_and_transport_schedule

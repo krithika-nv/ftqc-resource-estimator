@@ -1,0 +1,12 @@
+{
+  "schema": "ftqc.logical-workload.v1",
+  "id": "illustrative_workload_NOT_hardware_validation",
+  "operation_counts": {
+    "prepare": 10,
+    "memory_cycle": 1000,
+    "clifford_1q": 1000,
+    "clifford_2q": 500,
+    "t_gate": 100,
+    "measure": 10
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "family_outputs": {
+    "neutral_atom": {
+      "conditional_result": {
+        "expected_magic_state_attempts": 125.0,
+        "logical_computation_critical_path_us": 141120.0,
+        "mean_magic_state_supply_time_us": 31250.0,
+        "runtime_lower_bound_us": 141120.0,
+        "serial_upper_scheduling_envelope_us": 174520.0,
+        "success_independent_errors": 0.2828148766004519
+      },
+      "native_unit": "neutral_atom_capacity_equivalent_scenario",
+      "resource_budget": {
+        "communication": 8.25,
+        "control": 24.75,
+        "logical_data": 198.0,
+        "magic_factory": 198.0,
+        "total": 429.0
+      },
+      "sensitivity_not_statistical_CI": {
+        "expected_factory_supply_time_us_range": [
+          27777.777777777777,
+          35714.28571428572
+        ],
+        "independent_success_range": [
+          0.15029314810362707,
+          0.5319315146276539
+        ],
+        "type": "assumption_sensitivity_range_NOT_a_confidence_interval"
+      }
+    },
+    "photonic": {
+      "conditional_result": {
+        "expected_magic_state_attempts": 125.0,
+        "logical_computation_critical_path_us": 17640.0,
+        "mean_magic_state_supply_time_us": 21250.0,
+        "runtime_lower_bound_us": 21250.0,
+        "serial_upper_scheduling_envelope_us": 39500.0,
+        "success_independent_errors": 0.20279505950797191
+      },
+      "native_unit": "photonic_capacity_equivalent_scenario",
+      "resource_budget": {
+        "communication": 17.5,
+        "control": 52.5,
+        "logical_data": 420.0,
+        "magic_factory": 420.0,
+        "total": 910.0
+      },
+      "sensitivity_not_statistical_CI": {
+        "expected_factory_supply_time_us_range": [
+          18888.88888888889,
+          24285.714285714286
+        ],
+        "independent_success_range": [
+          0.09121722560499301,
+          0.4505034625176003
+        ],
+        "type": "assumption_sensitivity_range_NOT_a_confidence_interval"
+      }
+    },
+    "superconducting": {
+      "conditional_result": {
+        "expected_magic_state_attempts": 125.0,
+        "logical_computation_critical_path_us": 50400.0,
+        "mean_magic_state_supply_time_us": 12500.0,
+        "runtime_lower_bound_us": 50400.0,
+        "serial_upper_scheduling_envelope_us": 63600.0,
+        "success_independent_errors": 0.3943503607970321
+      },
+      "native_unit": "superconducting_physical_sites_scenario",
+      "resource_budget": {
+        "communication": 5.0,
+        "control": 15.0,
+        "logical_data": 120.0,
+        "magic_factory": 120.0,
+        "total": 260.0
+      },
+      "sensitivity_not_statistical_CI": {
+        "expected_factory_supply_time_us_range": [
+          11111.111111111111,
+          14285.714285714286
+        ],
+        "independent_success_range": [
+          0.24754560187588737,
+          0.6280541929422359
+        ],
+        "type": "assumption_sensitivity_range_NOT_a_confidence_interval"
+      }
+    },
+    "trapped_ion": {
+      "conditional_result": {
+        "expected_magic_state_attempts": 125.0,
+        "logical_computation_critical_path_us": 453600.0,
+        "mean_magic_state_supply_time_us": 50000.0,
+        "runtime_lower_bound_us": 453600.0,
+        "serial_upper_scheduling_envelope_us": 505190.0,
+        "success_independent_errors": 0.5497907396381448
+      },
+      "native_unit": "ion_capacity_equivalent_scenario",
+      "resource_budget": {
+        "communication": 3.75,
+        "control": 11.25,
+        "logical_data": 90.0,
+        "magic_factory": 90.0,
+        "total": 195.0
+      },
+      "sensitivity_not_statistical_CI": {
+        "expected_factory_supply_time_us_range": [
+          44444.444444444445,
+          57142.857142857145
+        ],
+        "independent_success_range": [
+          0.40759158443302707,
+          0.7415190915295724
+        ],
+        "type": "assumption_sensitivity_range_NOT_a_confidence_interval"
+      }
+    }
+  },
+  "hardware_comparison_validated": false,
+  "limitation": "Explicit hypothetical multipliers; NO cross-device hardware ranking; no measured-to-logical gate uncertainty propagation.",
+  "schema": "ftqc.illustrative-workload-receipt.v1",
+  "study": "same abstract Clifford+T workload, four distinct uncalibrated scenarios",
+  "workload": {
+    "id": "illustrative_workload_NOT_hardware_validation",
+    "operation_counts": {
+      "clifford_1q": 1000,
+      "clifford_2q": 500,
+      "measure": 10,
+      "memory_cycle": 1000,
+      "prepare": 10,
+      "t_gate": 100
+    },
+    "schema": "ftqc.logical-workload.v1"
+  }
+}

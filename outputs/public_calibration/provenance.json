@@ -1,0 +1,12 @@
+{
+  "schema": "ftqc.public_calibration_provenance.v1",
+  "classification": "MEASURED_HISTORICAL_INPUTS__MODEL_PROJECTION_NOT_VALIDATED",
+  "backend": "ibmq_manila",
+  "snapshot_timestamp": "2024-05-27T15:27:23-03:00",
+  "source_type": "CURATED_PUBLISHED_SUBSET",
+  "source_url": "https://raw.githubusercontent.com/Qiskit/qiskit-ibm-runtime/main/qiskit_ibm_runtime/fake_provider/backends/manila/props_manila.json",
+  "source_sha256": "0b1eb4a7a5de2009e2af5f0dfc013459f13f7531709599a121da5c7dcb2f661c",
+  "original_raw_json_parsed": false,
+  "raw_file_verified": false,
+  "hardware_validation_completed": false
+}

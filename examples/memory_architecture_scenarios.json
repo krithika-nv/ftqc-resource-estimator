@@ -1,0 +1,9 @@
+{
+  "comment": "Explicitly hypothetical storage-control designs. Same Stim memory noise across scenarios; NOT calibrated hardware.",
+  "workload": {"logical_qubits": 4, "memory_windows": 10, "target_failure": 0.1},
+  "memory_architectures": [
+    {"name": "fast_control_low_reserve", "cycle_us": 0.5, "decode_us_per_window": 0.5, "reserve_fraction": 0.02},
+    {"name": "balanced_control", "cycle_us": 1.0, "decode_us_per_window": 1.5, "reserve_fraction": 0.06},
+    {"name": "conservative_reserve", "cycle_us": 1.5, "decode_us_per_window": 2.0, "reserve_fraction": 0.15}
+  ]
+}

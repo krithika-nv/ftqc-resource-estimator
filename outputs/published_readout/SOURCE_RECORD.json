@@ -1,0 +1,39 @@
+{
+  "schema": "ftqc.published_readout_empirical_anchor.v1",
+  "reference": "https://arxiv.org/html/2610.23840",
+  "version": "arXiv:2610.23840v1 (16 October 2026), preprint",
+  "device": "IBM Nighthawk r2, ibm_phoenix",
+  "experiment": "Selected distance-3 placement with fused reset; readout-duration comparison, Fig. 2b-d",
+  "interpretation": "Reported, rounded published measurements; NOT newly collected, NOT full-device calibration",
+  "readout_duration_us": {
+    "standard": 1.94,
+    "short": 1.14
+  },
+  "reported_per_round_logical_error_percent": {
+    "X_memory": {
+      "standard": 1.67,
+      "short": 0.98
+    },
+    "Z_memory": {
+      "standard": 0.82,
+      "short": 0.63
+    }
+  },
+  "reported_detector_pair_reduction_percentage_points": {
+    "bit_flip_associated": {
+      "measured": 0.22,
+      "coherence_only_prediction": 0.23
+    },
+    "phase_associated": {
+      "measured": 0.95,
+      "coherence_only_prediction": 0.22
+    }
+  },
+  "critical_distinctions": [
+    "Source experiment is IBM Nighthawk, not Google Willow; never mix device inputs for a calibrated claim.",
+    "Logical-error percentages are paper-reported epsilon per round, not nine-round failure probabilities.",
+    "Detector-pair percentage-point changes are not independent per-qubit Pauli probabilities.",
+    "Shortening readout also changes circuit schedule; coherent ZZ and other correlated effects may matter.",
+    "Measurement channels and the total concurrent readout capacity are not derived from these durations."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "backend_name": "ibmq_manila",
+  "snapshot_timestamp": "2024-05-27T15:27:23-03:00",
+  "physical_qubits": 5,
+  "median_t1_us_measured": 144.67316223194067,
+  "median_t2_echo_us_measured_not_free_idle": 54.36101156476186,
+  "median_readout_duration_us_measured": 5.35111111111111,
+  "median_readout_error_measured": 0.02190000000000003,
+  "mean_readout_error_measured": 0.03732,
+  "mean_cx_error_measured": 0.00995462404681026,
+  "max_cx_error_measured": 0.01394038580879381,
+  "relaxation_only_pX_per_qubit_approx": [
+    0.009966878555775105,
+    0.010514622792107131,
+    0.00829342449891124,
+    0.007358849675226514,
+    0.00907797551045006
+  ],
+  "relaxation_only_pY_per_qubit_approx": [
+    0.009966878555775105,
+    0.010514622792107131,
+    0.00829342449891124,
+    0.007358849675226514,
+    0.00907797551045006
+  ],
+  "t2_ramsey_us": "NOT_MEASURED_IN_THIS_SNAPSHOT",
+  "controller_parallelism": "NOT_MEASURED_IN_THIS_SNAPSHOT",
+  "idling_noise_inference": "T1_only_Pauli_twirled_relaxation_proxy__missing_free_idle_dephasing",
+  "surface_code_hardware_prediction_supported": false,
+  "five_qubit_repetition_memory_demo_only": true,
+  "stim_parameters_ILLUSTRATIVE": {
+    "distance": 3,
+    "rounds": 3,
+    "after_clifford_depolarization": 0.01009091745491146,
+    "before_round_data_depolarization": 0.013616963265675089,
+    "before_measure_flip_probability": 0.02190000000000003,
+    "after_reset_flip_probability": 0.0
+  },
+  "limitations": [
+    "Measured RB CX errors are not identical to after-Clifford depolarization.",
+    "T1-only relaxation omits phase decoherence and unknown Ramsey T2-star.",
+    "Median readout error merges asymmetric assignment probabilities.",
+    "The Stim repetition-code generator is not a transpiled pulse-level Manila experiment.",
+    "No real device bitstrings were compared, no out-of-sample prediction is claimed.",
+    "This historical 5-qubit processor cannot validate rotated-surface-code d3 memory."
+  ]
+}
