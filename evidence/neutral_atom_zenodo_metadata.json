@@ -1,0 +1,18 @@
+{
+  "doi": "10.5281/zenodo.15685795",
+  "files": [
+    {
+      "checksum": "md5:4c45c542b63a9bbcda7f2fbd85577eb8",
+      "filename": "Zenodo.zip",
+      "size_bytes": 996799635,
+      "url": "https://zenodo.org/api/records/15685795/files/Zenodo.zip/content"
+    }
+  ],
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "note": "Metadata only: not decoder reconstruction, hardware validation, or permission to redistribute raw files.",
+  "record_id": "15685795",
+  "schema": "ftqc.zenodo-metadata.v1",
+  "title": "Surface code data and analysis"
+}
